@@ -1,3 +1,26 @@
+v1.4.0 (in development)
+-----------------------
+- When splitting apart comma-separated keywords, trim whitespace and discard
+  any keywords that are empty or all-whitespace
+
+
+v1.3.0 (2019-05-09)
+-------------------
+- Upgraded `wheel_inspect.SCHEMA` from JSON Schema draft 4 to draft 7
+- Don't require directory entries in wheels to be listed in `RECORD`
+
+
+v1.2.1 (2019-04-20)
+-------------------
+- Include `pyproject.toml` in `MANIFEST.in`, thereby making it possible to
+  build from sdist
+
+
+v1.2.0 (2019-04-20)
+-------------------
+- `.derived.keywords` is now sorted and duplicate-free
+
+
 v1.1.0 (2018-10-28)
 -------------------
 - `"buildver"` is now `None`/`null` instead of the empty string when there is

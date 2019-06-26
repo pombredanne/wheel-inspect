@@ -1,5 +1,5 @@
 SCHEMA = {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
     "required": [
         "filename",
@@ -271,6 +271,7 @@ SCHEMA = {
                 "keywords": {
                     "type": "array",
                     "items": {"type": "string"},
+                    "uniqueItems": True,
                     "description": "The wheel's keywords string, split on what appears to be the appropriate separator"
                 },
                 "keyword_separator": {
